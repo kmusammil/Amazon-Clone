@@ -1,4 +1,14 @@
-const products = [
+export function  getProduct(productId) {
+   let matchingItem;
+     products.forEach((product) => {
+       if (productId === product.id) {
+         matchingItem = product;
+       }
+     })
+     return matchingItem;
+}
+
+export const products = [
   {
     id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
     image: "images/products/athletic-cotton-socks-6-pairs.jpg",
